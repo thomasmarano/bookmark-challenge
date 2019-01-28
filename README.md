@@ -5,7 +5,7 @@
 ```
 
 As a user,
-So I can click on a bookmark,
+So I can quickly visit websites I often use
 I want to be able to see a list of bookmarks
 
 ```
