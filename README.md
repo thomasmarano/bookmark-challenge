@@ -11,5 +11,4 @@ I want to be able to see a list of bookmarks
 
 ```
 
-
 ![Domain Model 1](https://i.imgur.com/QCMsdxH.png)
