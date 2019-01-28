@@ -1,6 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/bookmarks_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/Thomas/Desktop/bookmark-challenge/spec/features/homepage_spec.rb": [
         1,
         1,
@@ -11,8 +24,22 @@
         1,
         null,
         null
+      ],
+      "/Users/Thomas/Desktop/bookmark-challenge/spec/units/bookmarks_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1548688904
+    "timestamp": 1548692797
   }
 }
