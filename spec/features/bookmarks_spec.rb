@@ -7,5 +7,6 @@ feature 'Visiting bookmarks' do
         click_on('Bookmarks')
         expect(page).to have_content('https://www.google.com')
         expect(page).to have_content('https://www.facebook.com')
+        expect(page).to have_content('https://www.twitter.com')
     end
 end
