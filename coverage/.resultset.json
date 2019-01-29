@@ -1,6 +1,21 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/add_bookmark_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Thomas/Desktop/bookmark-challenge/spec/features/bookmarks_spec.rb": [
         1,
         1,
@@ -37,6 +52,21 @@
         1,
         null,
         null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
         1,
         null,
         1,
@@ -46,23 +76,16 @@
         1,
         null,
         null,
-        1,
-        1,
         null,
         1,
         1,
-        1,
         null,
-        1,
-        null,
-        1,
-        1,
         1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1548775739
+    "timestamp": 1548783100
   }
 }

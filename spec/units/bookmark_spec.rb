@@ -25,4 +25,11 @@ describe Bookmark do
             expect(bookmarks).to include('http://www.destroyallsoftware.com')
         end
     end
+
+    describe 'add_bookmark' do
+        it 'responds to method' do
+
+            expect(bookmark).to respond_to(:add_bookmark).with(1).argument
+        end
+    end
 end

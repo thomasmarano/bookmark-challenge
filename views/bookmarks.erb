@@ -4,3 +4,8 @@
     <li><%=bookmark %></li>
   <% end %>
 </ul>
+
+<form action='/bookmark-saver' method='post'>
+    Website: <input type='text' name='website'/>
+    <input type='submit' value='Add Bookmark'/>
+</form>
