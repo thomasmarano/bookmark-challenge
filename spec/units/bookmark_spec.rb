@@ -1,5 +1,7 @@
 require 'bookmark'
 
+
+
 describe Bookmark do
 
     subject(:bookmark) {Bookmark.new}
@@ -10,10 +12,17 @@ describe Bookmark do
         end
 
         it 'returns a list of all Bookmarks' do
+            connection = PG.connect(dbname: 'bookmark_manager_test')
+
+            connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
+            connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
+            connection.exec("INSERT INTO bookmarks (url) VALUES('https://www.google.com');")
+
             bookmarks = Bookmark.all
+
             expect(bookmarks).to include('https://www.google.com')
-            expect(bookmarks).to include('https://www.facebook.com')
-            expect(bookmarks).to include('https://www.twitter.com')
+            expect(bookmarks).to include('http://www.makersacademy.com')
+            expect(bookmarks).to include('http://www.destroyallsoftware.com')
         end
     end
 end

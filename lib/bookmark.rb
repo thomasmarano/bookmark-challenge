@@ -1,12 +1,15 @@
+require 'pg'
+
 class Bookmark
     attr_reader :list
 
     def self.all
-        [
-          "https://www.google.com",
-          "https://www.facebook.com",
-          "https://www.twitter.com"
-        ]
+        if ENV['ENVIRONMENT'] == 'test'
+            connection = PG.connect(dbname: 'bookmark_manager_test')
+        else
+            connection = PG.connect(dbname: 'bookmark_manager')
+        end
+        result = connection.exec('SELECT * FROM bookmarks;')
+        result.map {|bookmark| bookmark['url']}
     end
-
 end
