@@ -52,8 +52,6 @@
       "/Users/Thomas/Desktop/bookmark-challenge/spec/units/bookmark_spec.rb": [
         1,
         null,
-        null,
-        null,
         1,
         null,
         1,
@@ -76,6 +74,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        null,
         null,
         null,
         null,
@@ -83,11 +84,20 @@
         1,
         null,
         1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1548861464
+    "timestamp": 1548865486
   }
 }
