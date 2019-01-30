@@ -17,7 +17,7 @@ enable :sessions
     end
 
     post '/bookmark-saver' do
-      Bookmark.create(url: params[:website], title: params[:bookmark_name])
+      Bookmark.create(params[:website], params[:bookmark_name])
       p "Form data submitted to the /bookmark-saver route!"
       redirect '/bookmarks/new'
     end

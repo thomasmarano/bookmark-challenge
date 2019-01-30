@@ -1,7 +1,11 @@
 <h1>List of Bookmarks</h1>
 <ul>
   <%@bookmark.each do |bookmark|%>
-    <li><%=bookmark.title %></li>
+    <li>
+      <a href="<%=bookmark.url %>">
+        <%=bookmark.title %>
+      </a>
+    </li>
   <% end %>
 </ul>
 
