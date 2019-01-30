@@ -7,7 +7,8 @@ feature "adding bookmarks" do
 
         visit '/bookmarks/new'
         fill_in('website', with: 'http://www.google.com')
+        fill_in('bookmark_name', with: 'Google')
         click_on('Add Bookmark')
-        expect(page).to have_content('http://www.google.com')
+        expect(page).to have_content('Google')
     end
 end
