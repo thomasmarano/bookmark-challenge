@@ -16,20 +16,10 @@
         null,
         null
       ],
-      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/bookmarks_spec.rb": [
+      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/homepage_spec.rb": [
         1,
         1,
         null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
         1,
         1,
         1,
@@ -37,10 +27,20 @@
         null,
         null
       ],
-      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/homepage_spec.rb": [
+      "/Users/Thomas/Desktop/bookmark-challenge/spec/features/viewing_bookmarks_spec.rb": [
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
         1,
         1,
         1,
@@ -55,19 +55,23 @@
         null,
         1,
         null,
-        2,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
         null,
         1,
         1,
         1,
         null,
         null,
-        1,
-        1,
         null,
-        1,
-        1,
-        1,
+        null,
         null,
         1,
         null,
@@ -86,6 +90,6 @@
         null
       ]
     },
-    "timestamp": 1548858906
+    "timestamp": 1548860159
   }
 }

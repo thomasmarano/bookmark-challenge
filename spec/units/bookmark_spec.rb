@@ -14,10 +14,11 @@ describe Bookmark do
         it 'returns a list of all Bookmarks' do
             connection = PG.connect(dbname: 'bookmark_manager_test')
 
-            connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com');")
-            connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com');")
-            connection.exec("INSERT INTO bookmarks (url) VALUES('https://www.google.com');")
+            Bookmark.create('http://www.makersacademy.com')
+            Bookmark.create('http://www.destroyallsoftware.com')
+            Bookmark.create('https://www.google.com')
 
+      
             bookmarks = Bookmark.all
 
             expect(bookmarks).to include('https://www.google.com')
@@ -29,7 +30,7 @@ describe Bookmark do
     describe 'add_bookmark' do
         it 'responds to method' do
 
-            expect(bookmark).to respond_to(:add_bookmark).with(1).argument
+            expect(Bookmark).to respond_to(:create).with(1).argument
         end
     end
 end
