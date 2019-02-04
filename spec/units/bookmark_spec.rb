@@ -46,4 +46,14 @@ describe Bookmark do
         end
 
     end
+
+    describe '#delete' do
+        it 'deletes an existing bookmark' do
+
+            Bookmark.create('http://testbookmark.com', 'Test')
+            Bookmark.delete('Test')
+            expect(Bookmark.all.length).to eq(0)
+
+        end
+    end
 end

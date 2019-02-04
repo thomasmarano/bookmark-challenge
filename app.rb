@@ -22,6 +22,11 @@ enable :sessions
       redirect '/bookmarks/new'
     end
 
+    post '/bookmark-deleter' do
+      Bookmark.delete(params[:bookmark_for_delete])
+      redirect '/bookmarks/new'
+    end
+
 
     run! if app_file == $0
 end
