@@ -7,8 +7,7 @@ feature 'delete bookmark' do
         fill_in('website', with: 'http://www.google.com')
         fill_in('bookmark_name', with: 'Google')
         click_on('Add Bookmark')
-        fill_in('bookmark_for_delete', with: 'Google')
-        click_on('Confirm')
+        click_on('Delete')
         expect(page).not_to have_content('Google')
     end
 end

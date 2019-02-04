@@ -8,7 +8,7 @@ class BookmarkManager < Sinatra::Base
       erb (:index)
     end
 
-enable :sessions
+enable :sessions, :method_override
 
 
     get '/bookmarks/new' do
@@ -22,8 +22,9 @@ enable :sessions
       redirect '/bookmarks/new'
     end
 
-    post '/bookmark-deleter' do
-      Bookmark.delete(params[:bookmark_for_delete])
+
+    delete '/bookmark-deleter/:id' do
+      Bookmark.delete(params['id'])
       redirect '/bookmarks/new'
     end
 

@@ -5,6 +5,10 @@
       <a href="<%=bookmark.url %>">
         <%=bookmark.title %>
       </a>
+      <form action='/bookmark-deleter/<%=bookmark.id%>' method='post'>
+          <input type='hidden' name='_method' value='DELETE'/>
+          <input type='submit' value='Delete'/>
+      </form>
     </li>
   <% end %>
 </ul>
@@ -13,9 +17,4 @@
     Website: <input type='text' name='website'/>
     Bookmark Name: <input type='text' name='bookmark_name'/>
     <input type='submit' value='Add Bookmark'/>
-</form>
-
-<form action='/bookmark-deleter' method='post'>
-    Delete Bookmark: <input type='text' name='bookmark_for_delete'/>
-    <input type='submit' value='Confirm'/>
 </form>
