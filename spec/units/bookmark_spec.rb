@@ -55,4 +55,16 @@ describe Bookmark do
 
         end
     end
+
+    describe '#update' do
+        it 'updates the bookmark with the given data' do
+        bookmark = Bookmark.create('http://www.makersacademy.com', 'Makers Academy')
+        updated_bookmark = Bookmark.update('http://www.snakersacademy.com', 'Snakers Academy', bookmark.id)
+
+    
+        expect(updated_bookmark.id).to eq bookmark.id
+        expect(updated_bookmark.title).to eq 'Snakers Academy'
+        expect(updated_bookmark.url).to eq 'http://www.snakersacademy.com'
+  end
+end
 end

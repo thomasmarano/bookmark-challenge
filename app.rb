@@ -24,8 +24,18 @@ enable :sessions, :method_override
 
 
     delete '/bookmark-deleter/:id' do
-      Bookmark.delete(params['id'])
+      Bookmark.delete(params[:id])
       redirect '/bookmarks/new'
+    end
+
+    get '/bookmark-editor/:id/edit' do
+        @bookmark_id = params[:id]
+        erb (:edit_bookmark)
+    end
+
+    patch '/bookmarks/:id' do
+        Bookmark.update(params[:url], params[:title], params[:id])
+        redirect '/bookmarks/new'
     end
 
 
