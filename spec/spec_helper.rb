@@ -1,16 +1,21 @@
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
 
+
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
 require 'simplecov'
 require 'simplecov-console'
+require_relative './database_connection_setup'
 require_relative './setup_test_database'
 
-ENV['ENVIRONMENT'] = 'test'
+
+  ENV['ENVIRONMENT'] = 'test'
+
 
 RSpec.configure do |config|
   config.before(:each) do
+    database_connection_setup
     setup_test_database
   end
 end

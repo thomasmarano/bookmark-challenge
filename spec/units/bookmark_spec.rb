@@ -16,9 +16,14 @@ describe Bookmark do
             bookmark = Bookmark.create('http://www.makersacademy.com', 'Makers')
             Bookmark.create('http://www.destroyallsoftware.com', 'Destroy All')
             Bookmark.create('https://www.google.com', 'Google')
-
-
             bookmarks = Bookmark.all
+
+            p 'TEST'
+            p bookmark
+            p 'TEST'
+            p bookmarks
+            p 'TEST'
+
             expect(bookmarks.length).to eq 3
             expect(bookmarks.first).to be_a Bookmark
             expect(bookmarks.first.id).to eq(bookmark.id)
@@ -61,7 +66,7 @@ describe Bookmark do
         bookmark = Bookmark.create('http://www.makersacademy.com', 'Makers Academy')
         updated_bookmark = Bookmark.update('http://www.snakersacademy.com', 'Snakers Academy', bookmark.id)
 
-    
+
         expect(updated_bookmark.id).to eq bookmark.id
         expect(updated_bookmark.title).to eq 'Snakers Academy'
         expect(updated_bookmark.url).to eq 'http://www.snakersacademy.com'

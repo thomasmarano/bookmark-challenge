@@ -3,9 +3,9 @@ require 'pg'
 
 class DatabaseConnection
 
-    def initiailize
-        @database
-    end
+    # def initiailize
+    #     @connection
+    # end
 
     def self.setup(dbname)
         @connection = PG.connect(dbname: dbname)
@@ -16,7 +16,7 @@ class DatabaseConnection
     end
 
     def self.query(sql_string)
-        result = @connection.exec(sql_string)
+        @connection.exec(sql_string)
     end
 
 
